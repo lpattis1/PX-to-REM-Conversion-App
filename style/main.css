@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn--primary {
+  background: #6d91cf;
+  border: none;
+  padding: 1.6rem 2.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.btn--secondary {
+  background: none;
+  border: 1px solid #d8d8d8f7;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: black;
+}
+.btn:focus {
+  outline-width: 0;
+}
+
+.btn-area {
+  display: flex;
+}
+
+.about .container {
+  max-width: 120rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.about h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.about p {
+  font-size: 1.5rem;
+  width: 68%;
+  color: #5f5f5f;
+  line-height: 2;
+  margin-bottom: 2.8rem;
+}
+.about p a {
+  color: #6d91cf;
+  font-weight: 500;
+}
+
+.social {
+  margin-bottom: 10rem;
+}
+.social__links {
+  max-width: 120rem;
+  flex-direction: row;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.social__links a {
+  font-size: 2.4rem;
+  margin-right: 2.7rem;
+  border: 1px solid #d8d8d8f7;
+  border-radius: 50%;
+  padding: 0.9rem 1.5rem;
+  color: #9c9c9c;
+}
+
+.header {
+  margin-top: 15rem;
+}
+.header__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin: auto;
+  text-align: center;
+}
+.header__title h1 {
+  font-weight: 500;
+  color: #6d91cf;
+  font-size: 4.5rem;
+}
+.header__title h4 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  color: #5f5f5f;
+}
+.header__title h4 a {
+  color: #5f5f5f;
+  font-weight: 600;
+}
+
+.header .container {
+  max-width: 120rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  margin-top: 1.7rem;
+  margin-bottom: 4rem;
+  border: 0.1rem solid #e0e0e0;
+  border-radius: 0.5rem;
+  height: 62rem;
+  width: 40rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.calculator__title {
+  margin-top: 5rem;
+}
+.calculator__title h3 {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+.calculator__base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.calculator__base .base--box {
+  background: #6d91cf;
+  color: white;
+  height: 3rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.calculator__base input {
+  width: 10rem;
+  height: 3rem;
+  border: 0.1rem solid #cfcfcf;
+  border-left: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  text-align: center;
+  color: #5f5f5f;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.calculator__base input:focus {
+  outline-width: 0;
+}
+.calculator__px {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.calculator__px .px--title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.calculator__px input {
+  width: 28rem;
+  height: 5rem;
+  border: 0.1rem solid #cfcfcf;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.calculator__px input:focus {
+  outline-width: 0;
+}
+.calculator__swap {
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculator__swap .fa-long-arrow-alt-up, .calculator__swap .fa-long-arrow-alt-down {
+  font-size: 3rem;
+  color: #f7aab9;
+}
+.calculator__rem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.calculator__rem .rem--title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.calculator__rem input {
+  width: 28rem;
+  height: 5rem;
+  border: 0.1rem solid #cfcfcf;
+  border-radius: 0.5rem;
+  text-align: center;
+  color: #5f5f5f;
+  color: #f7aab9;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.calculator__rem input:focus {
+  outline-width: 0;
+}
+
+.navbar {
+  margin-top: 10rem;
+}
+.navbar .container {
+  max-width: 120rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+.navbar__logo a {
+  text-decoration: none;
+  align-items: center;
+}
+.navbar__logo img {
+  height: 7rem;
+  margin-right: 0.5rem;
+}
+.navbar__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__links li {
+  margin-bottom: 3rem;
+}
+.navbar__links a {
+  color: #5f5f5f;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+.navbar .fa-bars {
+  font-size: 3.5rem;
+  color: #5f5f5f;
+}/*# sourceMappingURL=main.css.map */

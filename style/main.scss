@@ -1,0 +1,19 @@
+// abstract folder
+@import "abstracts/variables";
+
+// base folder
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+// components folder
+@import "components/btn";
+
+// layout folder
+@import "layout/about";
+@import "layout/content";
+@import "layout/navbar";
+
+// pages folder
+@import "pages/home";

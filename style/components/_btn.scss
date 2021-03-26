@@ -1,0 +1,43 @@
+// btns
+
+    .btn {
+
+        margin-top: 1rem;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: row;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &--primary {
+            background: $color-primary;
+            border: none;
+            padding: 1.6rem 2.5rem;
+            border-radius: .5rem;
+            margin-right: .5rem;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        &--secondary {
+            background: none;
+            border: 1px solid $color-grey-light-1;
+            padding: 1.5rem 2.5rem;
+            border-radius: .5rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: black;
+        }
+
+        &:focus {
+            outline-width: 0;
+        }
+    }
+
+
+    .btn-area {
+        display: flex;
+    }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="container">
+            <div class="navbar__logo">
+                <img class="navbar__logo--img" src="/img/portfolio.svg" alt="">
+                <img class="navbar__logo--img" src="/img/box1.svg" alt="">
+                <img class="navbar__logo--img" src="/img/box2.svg" alt="">
+            </div>
+<!-- 
+            <ul class="navbar__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">PX to Percentage</a></li>
+                <li><a href="#">REM to PX</a></li>
+            </ul> -->
+            <a href="#"><i class="fas fa-bars"></i></a>
+
+        </div>
+
+    </nav>
+
+    <main class="header">
+
+        <section class="header__title">
+            <h1>PX to REM Conversion</h1>
+            <h4>Coded by <a href="#">Lauren Pattison</a></h4>
+        </section>
+
+        <!-- conversion section -->
+        <div class="container">
+            <div class="calculator">
+                <div class="calculator__title">
+                    <h3 id="px-to-rem-title">PX to REM</h3>
+                </div>
+
+            <form action="">
+
+                <!-- base -->
+                <div class="calculator__base">
+                    <h3 class="base--box">Base</h3>
+                    <input id="base" type="number" autocomplete="off"> <span class="hover-help"></span>
+                </div>
+    
+                <!-- pixel -->
+                <div class="calculator__px">
+                    <h3 class="px--title">Pixels</h3> <span class="hover-help"></span>
+                    <input id="px" type="number" autocomplete="off">
+                </div>
+    
+                <!-- swap -->
+                <div class="calculator__swap">
+                    <span id="rem-swap"><i class="fas fa-long-arrow-alt-up"></i></span>
+                    <span id="px-swap"><i class="fas fa-long-arrow-alt-down"></i></span>
+                </div>
+
+                <!-- rem -->
+                <div class="calculator__rem">
+                    <h3 class="rem--title">REM</h3> <span class="hover-help"></span>
+                    <input id="rem" type="text" readonly = "true">
+                </div>
+    
+            </form>
+
+    <!-- buttons -->
+            <div class="btn-area">
+                <button class="btn btn--primary" id="btn--convert">Convert</button>
+                <button class="btn btn--secondary btn--reset" type="reset" onclick="resetData()">Reset</button>
+            </div>
+
+            </div>
+    </div>
+
+        <!-- about -->
+
+        <section class="about">
+            <div class="container">
+                <h3>About this App</h3>
+                <p>This tool converts pixels to REM specifically for CSS. I created this as a way to speed up my development process and to make my websites more responsive and user-friendly. To learn more about PX to REM conversion, and CSS unit conversions in general, <a href="https://www.w3schools.com/cssref/css_units.asp">click this link!</a></p>
+            </div>
+        </section>
+
+        <section class="social">
+            <div class="container">
+                <ul class="social__links">
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-behance-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
